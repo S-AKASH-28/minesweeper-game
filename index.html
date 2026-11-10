@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#101827">
+
+    <title>Minesweeper</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <h1>💣 Minesweeper</h1>
+
+    <div id="game">
+
+  
+<div class="game-info">
+
+    <div class="info-box">
+        💣 Mines: <span id="mine-count">10</span>
+    </div>
+
+    <div class="info-box">
+        ⏱️ Time: <span id="timer">0</span>s
+    </div>
+
+</div>
+
+<div class="difficulty">
+
+    <button class="level" data-level="easy">Easy</button>
+    <button class="level" data-level="medium">Medium</button>
+    <button class="level" data-level="hard">Hard</button>
+
+</div>
+
+<div class="info-box">
+    🏆 Best Time: <span id="best-time">--</span>
+</div>
+
+<button id="restart">🔄 Restart</button>
+
+<button id="flag-mode">🚩 Flag Mode: OFF</button>
+
+<button id="settings-button" title="Settings">⚙️</button>
+
+<div id="message" class="message hidden">
+    <h2 id="message-title"></h2>
+    <p id="message-text"></p>
+    <button id="play-again">Play Again</button>
+</div>
+
+<div id="board-container">
+    <div id="board"></div>
+</div>
+<!-- GAME STATISTICS -->
+
+<!-- SETTINGS SCREEN -->
+
+<div id="settings-overlay" class="hidden">
+
+    <div id="settings-panel">
+
+        <div class="settings-header">
+            <h2>⚙️ Settings</h2>
+            <button id="close-settings">✖</button>
+        </div>
+
+        <!-- SOUND SETTINGS -->
+
+        <div class="settings-section">
+            <h3>🔊 Sound</h3>
+            <button id="sound-toggle">🔊 Sound: ON</button>
+        </div>
+
+        <!-- GAME STATISTICS -->
+
+        <div id="stats">
+
+            <h3>📊 Game Statistics</h3>
+
+            <div class="stat-item">
+                Games Played: <span id="games-played">0</span>
+            </div>
+
+            <div class="stat-item">
+                Games Won: <span id="games-won">0</span>
+            </div>
+
+            <div class="stat-item">
+                Win Rate: <span id="win-rate">0%</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
